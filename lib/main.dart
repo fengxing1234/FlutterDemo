@@ -1,9 +1,11 @@
+import 'package:demo_flutter_app/test_three.dart';
 import 'package:flutter/material.dart';
 
 //包内文件
 import 'package:demo_flutter_app/counter.dart';
 import 'package:demo_flutter_app/start_up_namer.dart';
 import 'package:demo_flutter_app/test_one.dart';
+import 'package:demo_flutter_app/test_two.dart';
 
 void main() => runApp(MyApp());
 
@@ -73,6 +75,26 @@ class MyHomePage extends StatelessWidget {
                 Navigator.of(context)
                     .push(new MaterialPageRoute(builder: (context) {
                   return TestOne();
+                }));
+              },
+            ),
+            FlatButton(
+              child: Text('练习2'),
+              textColor: Colors.blue,
+              onPressed: () {
+                Navigator.of(context)
+                    .push(new MaterialPageRoute(builder: (context) {
+                  return TestTwo();
+                }));
+              },
+            ),
+            FlatButton(
+              child: Text('练习3'),
+              textColor: Colors.blue,
+              onPressed: () {
+                Navigator.of(context)
+                    .push(new MaterialPageRoute(builder: (context) {
+                  return SampleApp();
                 }));
               },
             ),
